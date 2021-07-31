@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(
-	'mongodb://127.0.0.1:27017/piyushbackenddb',
+	'mongodb+srv://PiyushDubey31:piyushdubey0341@cluster0.khg11.mongodb.net/piyushbackenddb?retryWrites=true&w=majority',
 	{ useNewUrlParser: true, useUnifiedTopology: true },
 	(err, result) => {
 		if (result) {
