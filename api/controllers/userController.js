@@ -1,13 +1,15 @@
 const User = require('../models/user');
 module.exports = {
 	userController: async (req, res) => {
-		const { id, name, email, phone } = req.body;
+		const { id, name, email, phone ,username,password} = req.body;
 
 		const response = new User({
 			id: id,
 			name: name,
 			email: email,
-			phone: phone
+			phone: phone,
+			username:username,
+			password:password
 		});
 		response
 			.save()
